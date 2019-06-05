@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15662,13 +15662,11 @@ OSHW_LOGO</description>
 <part name="JST-LIPO" library="UnexpectedMaker" deviceset="JST_2PIN" device="" value="LIPO"/>
 <part name="U$16" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
-<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="0.75pF"/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
-<part name="L1" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="INDUCTOR" device="_0402_N" package3d_urn="urn:adsk.eagle:package:2593732/1" value="7.5nH"/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
 <part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="1.5pF"/>
-<part name="D1" library="cmonr_standardparts" deviceset="LED" device=".0402"/>
-<part name="D3" library="cmonr_standardparts" deviceset="LED" device=".0402"/>
+<part name="D1" library="cmonr_standardparts" deviceset="LED" device=".0402" value="RED"/>
+<part name="D3" library="cmonr_standardparts" deviceset="LED" device=".0402" value="ORANGE"/>
 <part name="R6" library="microbuilder" deviceset="RESISTOR" device="_0402MP" value="442K"/>
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="_0402MP" value="160K"/>
 <part name="U$23" library="microbuilder" deviceset="VBAT" device=""/>
@@ -15700,6 +15698,8 @@ OSHW_LOGO</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="0.1uF"/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
+<part name="L1" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" deviceset="INDUCTOR" device="_0402_N" package3d_urn="urn:adsk.eagle:package:2593732/1" value="7.5nH"/>
+<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="0.75pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -15862,19 +15862,11 @@ OSHW_LOGO</description>
 <instance part="U$22" gate="G$1" x="25.4" y="124.46" smashed="yes" rot="R270">
 <attribute name="VALUE" x="22.86" y="125.984" size="1.27" layer="96" rot="R270"/>
 </instance>
-<instance part="C4" gate="G$1" x="20.32" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="22.61" y="69.87" size="1.27" layer="95" font="vector" rot="R270" align="center"/>
-<attribute name="VALUE" x="18.02" y="69.87" size="1.27" layer="96" font="vector" rot="R270" align="center"/>
+<instance part="U$19" gate="G$1" x="20.32" y="91.44" smashed="yes" rot="R180">
+<attribute name="VALUE" x="21.844" y="93.98" size="1.27" layer="96" rot="R180"/>
 </instance>
-<instance part="U$19" gate="G$1" x="20.32" y="78.74" smashed="yes" rot="R180">
-<attribute name="VALUE" x="21.844" y="81.28" size="1.27" layer="96" rot="R180"/>
-</instance>
-<instance part="L1" gate="L$1" x="30.48" y="71.12" smashed="yes">
-<attribute name="NAME" x="29.21" y="66.04" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="34.29" y="66.04" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="U$21" gate="G$1" x="30.48" y="83.82" smashed="yes" rot="R180">
-<attribute name="VALUE" x="32.004" y="86.36" size="1.27" layer="96" rot="R180"/>
+<instance part="U$21" gate="G$1" x="30.48" y="86.36" smashed="yes" rot="R180">
+<attribute name="VALUE" x="32.004" y="88.9" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="C5" gate="G$1" x="22.86" y="63.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.11" y="65.79" size="1.27" layer="95" font="vector" align="center"/>
@@ -15979,6 +15971,14 @@ OSHW_LOGO</description>
 <instance part="U$17" gate="G$1" x="162.56" y="86.36" smashed="yes">
 <attribute name="VALUE" x="161.036" y="83.82" size="1.27" layer="96"/>
 </instance>
+<instance part="L1" gate="L$1" x="20.32" y="76.2" smashed="yes">
+<attribute name="NAME" x="19.05" y="71.12" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="24.13" y="71.12" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C4" gate="G$1" x="30.48" y="73.66" smashed="yes" rot="R180">
+<attribute name="NAME" x="32.77" y="72.41" size="1.27" layer="95" font="vector" rot="R270" align="center"/>
+<attribute name="VALUE" x="28.18" y="72.41" size="1.27" layer="96" font="vector" rot="R270" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16070,14 +16070,14 @@ OSHW_LOGO</description>
 <wire x1="106.68" y1="134.62" x2="106.68" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="U$19" gate="G$1" pin="GND"/>
-<wire x1="20.32" y1="73.66" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="83.82" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="L1" gate="L$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$21" gate="G$1" pin="GND"/>
-<wire x1="30.48" y1="78.74" x2="30.48" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="L1" gate="L$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="76.2" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -16654,26 +16654,26 @@ OSHW_LOGO</description>
 </net>
 <net name="ANT" class="0">
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="68.58" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="66.04" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="68.58" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
 <junction x="20.32" y="63.5"/>
 <label x="17.78" y="63.5" size="1.778" layer="95" rot="R90"/>
 <pinref part="U$8" gate="G$1" pin="P$2"/>
 <wire x1="15.24" y1="78.74" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="L1" gate="L$1" pin="2"/>
 </segment>
 </net>
 <net name="LNA_IN" class="0">
 <segment>
 <wire x1="43.18" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="L1" gate="L$1" pin="2"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
-<junction x="30.48" y="63.5"/>
 <pinref part="PICO-D4" gate="G$1" pin="LNA_IN"/>
 <label x="40.64" y="63.5" size="1.778" layer="95" rot="R180"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="63.5" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="68.58" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
+<junction x="30.48" y="63.5"/>
 </segment>
 </net>
 <net name="D+" class="0">
