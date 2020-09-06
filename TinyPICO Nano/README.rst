@@ -8,7 +8,7 @@ https://easyeda.com/component/a96b3b5613954f7abe1ca396b1f5ce27
 
 **TinyPICO_Nano.kicad_mod** - KiCAD footprint kindly provided by Mark Olsson ( https://github.com/k0d )
 
-**TinyPICO_Nano.Library.LibPkg** - Altium foorprint kindly provided by Ketan Desai ( https://twitter.com/ketszim )
+**TinyPICO_Nano.Library.IntLib** - Altium foorprint kindly provided by Ketan Desai ( https://twitter.com/ketszim )
 
 For more information about TinyPICO & TinyPICO NANO, please visit
 https://www.tinypico.com/tinypico-nano
