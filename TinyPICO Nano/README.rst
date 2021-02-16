@@ -6,7 +6,7 @@ In this folder you'll find various ECAD versions of the TinyPICO NANO footprint 
 EasyEDA footprint kindly provided by Brian Lough ( https://www.youtube.com/channel/UCezJOfu7OtqGzd5xrP3q6WA )
 https://easyeda.com/component/a96b3b5613954f7abe1ca396b1f5ce27
 
-**TinyPICO_Nano.kicad_mod** - KiCAD footprint kindly provided by Mark Olsson ( https://github.com/k0d )
+**TinyPICO_Nano KiCAD files** - KiCAD Footprint & Symbol kindly provided by Mark Olsson ( https://github.com/k0d )
 
 **TinyPICO_Nano.Library.IntLib** - Altium foorprint kindly provided by Ketan Desai ( https://twitter.com/ketszim )
 
