@@ -1,7 +1,9 @@
-TinyPICO V2 Schematics
-======================
+TinyPICO STL Files
+==================
 
-PDF schematics for TinyPICO V2 for both USB-C and Micro-B boards
+STL files for the TinyPICO family of boards
+
+Right now I only have the TinyPICO USB-C version up, but I'm working on the Micro-B and Nano versions and will upload them when they are done.
 
 
 Unexpected Maker
